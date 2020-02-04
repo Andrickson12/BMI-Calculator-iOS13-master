@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CalculateViewController: UIViewController {
     
     //Outlets
     @IBOutlet weak var heightLabel: UILabel!
@@ -42,9 +42,12 @@ class ViewController: UIViewController {
         //Get value of both sliders
         let height = heightSlider.value
         let weight = weightSlider.value
+        
         //Formula to get BMI
         let BMI = weight / (height * height)
-        print(BMI)
+        
+        
+        
     }
 }
 
