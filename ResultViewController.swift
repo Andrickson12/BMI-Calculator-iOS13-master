@@ -10,6 +10,8 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    //Properties
+    var bmiValue: String?
     @IBOutlet weak var bmiLabel: UILabel!
     @IBOutlet weak var adviceLabel: UILabel!
     
@@ -17,12 +19,18 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        bmiLabel.text = bmiValue
         
 
     }
     
     @IBAction func recalculatePressed(_ sender: UIButton) {
+        
+        //Dismiss current view
+        self.dismiss(animated: true, completion: nil)
+        
     }
+
     
     /*
     // MARK: - Navigation
